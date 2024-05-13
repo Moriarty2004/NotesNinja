@@ -1,4 +1,4 @@
-# NotesNinja
+# NotesNinja notesninja.tech
  
 NotesNinja is a revolutionary AI+ML and Neural Networks powered web application designed to enhance your learning through the power of Al and neural networks.
 
