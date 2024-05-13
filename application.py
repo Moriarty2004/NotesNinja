@@ -14,13 +14,13 @@ from langchain_google_genai import GoogleGenerativeAI
 
 app = Flask(__name__)
 
-load_dotenv()
+load_dotenv(dotenv_path="\\.env")
 
 CognitiveServices_Endpoint = getenv("CognitiveServices_Endpoint")
 CognitiveServices_APIKey = getenv("CognitiveServices_APIKey")
 
 # Defining some main integral values and variables
-google_api_key = getenv("google_api_key")
+google_api_key = getenv("GOOGLE_API_KEY")
 genai.configure(api_key=google_api_key)
 
 LLM = GoogleGenerativeAI(model="gemini-1.5-pro-latest", google_api_key=google_api_key,
